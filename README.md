@@ -2,7 +2,9 @@
 
 A kind-of quine in perl, i.e. a program that outputs its own source code—in this case, as an image (as opposed to source code like [traditional quines](https://en.wikipedia.org/wiki/Quine_(computing)) do). Created for the quine scarf competition held by [@fbz on Twitter](https://twitter.com/fbz/status/936117740560990209).
 
-I call it "kind-of-quine" because reading the source code's own file (via `$0` in Perl) might be considered cheating by some. However, since I aimed to include my own hand-pixelled font and wanted to avoid external libraries for the graphics output, there simply was no space for the traditional self-quoting approach used by text-only quines, since that would have at least doubled the size of the source code.
+I call it "kind-of-quine" because reading the source code's own file (via `$0` in Perl) is generally considered [cheating](https://en.wikipedia.org/wiki/Quine_(computing)#"Cheating"_quines).<sup>1</sup> However, because I aimed to include my own hand-pixelled font and wanted to avoid external libraries for the graphics output, there simply was no space for the traditional self-quoting approach used by text-only quines, since that would have at least doubled the size of the source code.
+
+<sup>1</sup> Strictly speaking, an image-generating program can only ever be a *true* self-replicating program if the corresponding programming language would use images as source code, so we left the land of by-the-book quines already… :) You be the judge!
 
 ## Usage
 
